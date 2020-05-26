@@ -5,8 +5,8 @@ const BASE_URL = "https://hacker-news.firebaseio.com/v0";
 const client = new ApiService({ baseURL: BASE_URL });
 
 const hackerNewsApi = {};
-
 const PAGE_LIMIT = 20;
+
 const getPageSlice = (limit, page = 0) => ({
   begin: page * limit,
   end: (page + 1) * limit,

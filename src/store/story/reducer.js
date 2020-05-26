@@ -10,18 +10,18 @@ const getInitialState = () => ({
 
 const story = (state = getInitialState(), { type, payload }) => {
   switch (type) {
-    case `${actionTypes.FETCH_STORY_IDS}_REQUEST`:
-    case `${actionTypes.FETCH_STORIES}_REQUEST`:
+    case actionTypes.FETCH_STORY_IDS_REQUEST:
+    case actionTypes.FETCH_STORIES_REQUEST:
       return {
         ...state,
         isFetching: true,
       };
-    case `${actionTypes.FETCH_STORY_IDS}_SUCCESS`:
+    case actionTypes.FETCH_STORY_IDS_SUCCESS:
       return {
         ...state,
         ...payload,
       };
-    case `${actionTypes.FETCH_STORIES}_SUCCESS`:
+    case actionTypes.FETCH_STORIES_SUCCESS:
       return {
         ...state,
         stories: [...state.stories, ...payload.stories],
