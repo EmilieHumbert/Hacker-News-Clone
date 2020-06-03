@@ -1,5 +1,5 @@
 export const colorsDark = {
-  background: "#272727",
+  body: "#272727",
   backgroundSecondary: "#393C3E",
   text: "#bfbebe",
   textSecondary: "#848886",
@@ -7,7 +7,7 @@ export const colorsDark = {
 };
 
 export const colorsLight = {
-  background: "#EAEAEA",
+  body: "#EAEAEA",
   backgroundSecondary: "#F8F8F8",
   text: "#848886",
   textSecondary: "#aaaaaa",
